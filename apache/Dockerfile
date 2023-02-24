@@ -8,5 +8,5 @@ EXPOSE 443
 RUN a2enmod ssl
 RUN a2enmod rewrite
 #Para tener permisos en la carpeta prestashop y poder descomprimir
-CMD chmod 777 /app/prestashop/ apachectl -D FOREGROUND
+CMD chmod 777 /app/prestashop/ && apachectl -D FOREGROUND
 #CMD apachectl -D FOREGROUND
